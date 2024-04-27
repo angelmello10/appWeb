@@ -1,0 +1,212 @@
+    /*===================Estilos Index==================*/
+
+/*Selector Universal*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    /*Ajusta relleno, todo=box-sizing*/
+    box-sizing: border-box;
+}
+
+/*===================% = Tamaño de la pantalla=====px = Pixeles=============*/
+#logogym{
+    width: 15%;
+    /*=====La imagen hacia la izquierda del texto===========*/
+    float: left;
+    margin: 0px 0px; /* Ajusta la cantidad de espacio vertical según tus necesidades */
+    padding: 1%;
+}
+.h1h{
+    /*========Tipo de letra===========*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*========Tamaño de la letra===========*/
+    font-size: 55px;
+    background: linear-gradient(to right, #ecdcff, #ef18cf);
+    -webkit-background-clip: text; /* Para navegadores webkit (Chrome, Safari) */
+    background-clip: text;
+    color: transparent; /* Oculta el color del texto original */
+    font-weight: bold; /* Establece el peso de la fuente */
+    /*=======Para quitar las Lineas============*/
+    text-decoration: none;
+    /*========Espaciado entre las letras============*/
+    letter-spacing: 2px;
+    /*========Siempre se usa el porcentaje que los pixeles============*/
+    padding: 3%;
+    text-align: center;
+    width: 100%;
+    margin: 1px -100px;/*Este es para alinear izquierda a derecha*/
+    
+}
+     
+
+.cerrar{
+    max-width: 100%; 
+    background-color:#000000e3;
+    /*=======Controla Desvordamiento de contenido============*/
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+}
+
+.cerrar a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding:5px 10px;
+}  
+.cerrar a:hover{
+    background-color:rgba(240, 248, 255, 0.863);
+    color: rgb(0, 0, 0);
+    transition: 01s;
+    transform: scale (2.0);
+}
+.menu{
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 1;
+    left: 0;
+    background: linear-gradient(to right, #febaf4, #ffffff);
+    padding-top: 100px;
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menu li {
+    margin-bottom: 50px;
+    border-bottom: 4px solid #535353;
+}
+.menu a {
+    display: block;
+    color: rgb(19, 19, 19);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 10px;
+}
+
+.menu a:hover {
+    background-color:rgba(255, 255, 255, 0.863);
+    color: rgb(160, 233, 255);
+    transition: 01s;
+    transform: scale (2.0);
+}
+.contenido {
+    margin-left: 240px; /* Ancho del menú + un poco de espacio */
+    padding: 120px;
+}
+/* Estilo para el encabezado */
+h2 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para el contenedor del formulario */
+  .formulario {
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Estilo para los campos de entrada */
+  input[type="text"] {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para etiquetas */
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  button {
+    background-color: #4c4caf;
+    color: white;
+    padding: 10px 50px;
+    margin: 1px 261px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1px;
+  }
+  .mensaje_exito {
+    color: rgb(3, 3, 3);
+    font-weight: bold;
+    
+    position: fixed;
+    top: 200px; /* ajusta según tu preferencia */
+    right: 10px; /* ajusta según tu preferencia */
+    padding: 5px;
+}
+
+.mensaje_error {
+    color: red;
+    font-weight: bold;
+    
+    position: fixed;
+    top: 220px; /* ajusta según tu preferencia */
+    right: 10px; /* ajusta según tu preferencia */
+    padding: 5px;
+}
+.formulario {
+    width: 40%; /* Ancho del formulario */
+    margin: 20px auto; /* Margen superior e inferior automático y margen izquierdo y derecho automático */
+    padding: 20px; /* Espacio interno del formulario */
+    border: 1px solid #ccc; /* Borde del formulario */
+    border-radius: 5px; /* Radio de borde para esquinas redondeadas */
+    background-color: #f9f9f9; /* Color de fondo del formulario */
+    text-align: center;
+}
+
+/* Estilo para los títulos del formulario */
+.formulario h2 {
+    margin-bottom: 20px; /* Margen inferior del título */
+    text-align: center; /* Alineación del texto al centro */
+}
+
+/* Estilo para las etiquetas de los campos */
+.formulario label {
+    display: block; /* Hace que las etiquetas ocupen todo el ancho disponible */
+    margin-bottom: 10px; /* Margen inferior de las etiquetas */
+}
+
+/* Estilo para los campos de entrada */
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="number"],
+.formulario textarea {
+    width: 100%; /* Ancho completo del campo de entrada */
+    padding: 10px; /* Espaciado interno del campo de entrada */
+    margin-bottom: 15px; /* Margen inferior del campo de entrada */
+    border: 1px solid #ccc; /* Borde del campo de entrada */
+    border-radius: 3px; /* Radio de borde para esquinas redondeadas */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+/* Estilo para el botón de enviar */
+.formulario input[type="submit"] {
+    background-color: #4671e7; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 12px 20px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Radio de borde para esquinas redondeadas */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    font-size: 16px; /* Tamaño de fuente del texto del botón */
+    text-align: center;
+}
+
+/* Estilo para el botón de enviar al pasar el ratón */
+.formulario input[type="submit"]:hover {
+    background-color: #45a049; /* Cambia el color de fondo del botón al pasar el ratón */
+}

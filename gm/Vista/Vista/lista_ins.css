@@ -1,0 +1,153 @@
+    /*===================Estilos Index==================*/
+
+/*Selector Universal*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    /*Ajusta relleno, todo=box-sizing*/
+    box-sizing: border-box;
+}
+
+/*===================% = Tamaño de la pantalla=====px = Pixeles=============*/
+#logogym{
+    width: 15%;
+    /*=====La imagen hacia la izquierda del texto===========*/
+    float: left;
+    margin: 0px 0px; /* Ajusta la cantidad de espacio vertical según tus necesidades */
+    padding: 1%;
+}
+.h1h{
+    /*========Tipo de letra===========*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*========Tamaño de la letra===========*/
+    font-size: 55px;
+    background: linear-gradient(to right, #5933e3, #979797);
+    -webkit-background-clip: text; /* Para navegadores webkit (Chrome, Safari) */
+    background-clip: text;
+    color: transparent; /* Oculta el color del texto original */
+    font-weight: bold; /* Establece el peso de la fuente */
+    /*=======Para quitar las Lineas============*/
+    text-decoration: none;
+    /*========Espaciado entre las letras============*/
+    letter-spacing: 2px;
+    /*========Siempre se usa el porcentaje que los pixeles============*/
+    padding: 3%;
+    text-align: center;
+    width: 100%;
+    margin: 1px -100px;/*Este es para alinear izquierda a derecha*/
+    
+}
+
+.cerrar{
+    max-width: 100%; 
+    background-color:#000000e3;
+    /*=======Controla Desvordamiento de contenido============*/
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+}
+
+.cerrar a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding:5px 10px;
+}  
+.cerrar a:hover{
+    background-color:rgba(240, 248, 255, 0.863);
+    color: rgb(0, 0, 0);
+    transition: 01s;
+    transform: scale (2.0);
+}
+.menu{
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 1;
+    left: 0;
+    background: linear-gradient(to right, #febaf4, #ffffff);
+    padding-top: 100px;
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menu li {
+    margin-bottom: 50px;
+    border-bottom: 4px solid #535353;
+}
+.menu a {
+    display: block;
+    color: rgb(19, 19, 19);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 10px;
+}
+
+.menu a:hover {
+    background-color:rgba(255, 255, 255, 0.863);
+    color: rgb(160, 233, 255);
+    transition: 01s;
+    transform: scale (2.0);
+}
+.contenido {
+    margin-left: 240px; /* Ancho del menú + un poco de espacio */
+    padding: 120px;
+}
+
+.nuevo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #d3cfd1 ;
+    font-size: 100%;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 12px;
+    margin-left: 85%;
+    border-radius: 5%;
+}
+
+  
+.tabla{
+    max-width: 100%; 
+    background-color:rgba(255, 255, 255, 0.89);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    /*=======Separador de izquierda a derecha============*/
+    margin-top: 1%;
+    margin-left: 25%;
+    padding: 10px 10px;
+    width: 69%;
+    border: 1px solid #000000;
+    
+}
+.lcliente{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #000000;
+    float:center;
+    margin-left:25%; 
+    margin-top: 40px;
+    margin-right: 40%;
+   
+} 
+
+  th {
+    border: 2px solid #000; /* Establece un borde sólido de 1px con color negro */
+    padding: 3px; /* Espaciado interno para el contenido en las celdas */
+    text-align: center; /* Alinea el texto a la izquierda en las celdas */
+    background-color: #b6e8ee;
+  }
+  
+  td {
+    border: 1px solid #000; /* Establece un borde sólido de 1px con color negro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px; /* Espaciado interno para el contenido en las celdas */
+    text-align: center; /* Alinea el texto a la izquierda en las celdas */
+  }

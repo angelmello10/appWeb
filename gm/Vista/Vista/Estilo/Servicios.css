@@ -1,0 +1,134 @@
+/*===================Estilos Index==================*/
+
+/*Selector Universal*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    /*Ajusta relleno, todo=box-sizing*/
+    box-sizing: border-box;
+}
+
+/*===================% = Tamaño de la pantalla=====px = Pixeles=============*/
+#logogym {
+    width: 15%;
+    display: flex; /* Establece el contenedor como un contenedor flex */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+
+
+/*=======Las clases siempre se ponen en .============*/
+.menu_Horizontal {
+    max-width: 100%; 
+    background-image: linear-gradient(to right, rgba(132, 132, 211, 0.89), rgba(255, 93, 198, 0.89));
+    /*=======Controla Desvordamiento de contenido============*/
+    overflow: hidden;
+    
+}
+
+/*Contenido de la barra horizontal */
+.menu_Horizontal a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    /*=======Separador de izquierda a derecha============*/
+    padding: 20px 42px;
+    float: right;
+    transition: color 0.3s ease; /* Transición suave de 0.3 segundos */
+}
+
+.menu_Horizontal a:hover {
+    color: rgb(255, 255, 255); /* Color difuminado al pasar el mouse */
+}
+.col{
+    width: 50%;
+    height: auto;
+    float: left;
+    margin: 1% 0%;
+}
+
+/*Texto */
+.col p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    text-align: center; /* Alinea el texto al centro */
+    width: 80%; /* Porcentaje del ancho del contenedor */
+    margin: 0 auto; /* Centra horizontalmente */
+    margin-top: 20%;
+} 
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+table {
+    width: 50%;
+    border-bottom: 15%;
+}
+
+th{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(171, 214, 244);
+}
+td{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(229, 243, 253);
+}
+
+img {
+    width: 300px;
+    height: auto;
+    border-radius: 3%;
+}
+
+
+/*pie de pagina*/
+footer {
+    background-image: linear-gradient(to right, rgba(132, 132, 211, 0.89), rgba(255, 93, 198, 0.89));
+    color: #000000;
+    padding: 20px 0;
+}
+
+.piepagina {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.piepagina p {
+    margin: 0;
+}
+
+.piepagina ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.piepagina ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.piepagina ul li:last-child {
+    margin-right: 0;
+}
+
+.piepagina ul li a {
+    color: #fff;
+    text-decoration: none;
+}

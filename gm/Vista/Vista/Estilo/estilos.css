@@ -1,0 +1,140 @@
+/*===================Estilos Index==================*/
+
+/*Selector Universal*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    /*Ajusta relleno, todo=box-sizing*/
+    box-sizing: border-box;
+}
+
+/*===================% = Tamaño de la pantalla=====px = Pixeles=============*/
+#logogym {
+    width: 15%;
+    display: flex; /* Establece el contenedor como un contenedor flex */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+}
+h1{
+    /*========Tipo de letra===========*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*========Tamaño de la letra===========*/
+    font-size: 80px;
+    background: linear-gradient(to right, #c79fbf, #ef00ef);
+    -webkit-background-clip: text; /* Para navegadores webkit (Chrome, Safari) */
+    background-clip: text;
+    color: transparent; /* Oculta el color del texto original */
+    font-weight: bold; /* Establece el peso de la fuente */
+    /*=======Para quitar las Lineas============*/
+    text-decoration: none;
+    /*========Espaciado entre las letras============*/
+    letter-spacing: 10px;
+    /*========Siempre se usa el porcentaje que los pixeles============*/
+    padding: 2%;
+    text-align: center;
+    width: 100%;
+    margin: 2px -100px;/*Este es para alinear izquierda a derecha*/
+    
+}
+/*=======Las clases siempre se ponen en .============*/
+.menu_Horizontal {
+    max-width: 100%; 
+    background-image: linear-gradient(to right, rgba(132, 132, 211, 0.89), rgba(255, 93, 198, 0.89));
+    /*=======Controla Desvordamiento de contenido============*/
+    overflow: hidden;
+}
+
+/*Contenido de la barra horizontal */
+.menu_Horizontal a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    /*=======Separador de izquierda a derecha============*/
+    padding: 20px 42px;
+    float: right;
+    transition: color 0.3s ease; /* Transición suave de 0.3 segundos */
+}
+
+.menu_Horizontal a:hover {
+    color: rgb(255, 255, 255); /* Color difuminado al pasar el mouse */
+}
+.col{
+    width: 50%;
+    height: auto;
+    float: left;
+    margin: 1% 0%;
+}
+
+/*Texto */
+.col p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    text-align: center; /* Alinea el texto al centro */
+    width: 80%; /* Porcentaje del ancho del contenedor */
+    margin: 0 auto; /* Centra horizontalmente */
+    margin-top: 20%;
+} 
+/* Imagenes*/
+.carousel {
+    overflow: hidden;
+    margin-bottom: 20px
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 1s ease;
+    animation: slide 5s infinite alternate; /* Cambia de imagen cada 5 segundos */
+  }
+  
+  .slides img {
+    width: 90%;
+    height: auto;
+    margin-top: 5%;
+    border-radius: 10px;
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+/*pie de pagina*/
+footer {
+    background-image: linear-gradient(to right, rgba(132, 132, 211, 0.89), rgba(255, 93, 198, 0.89));
+    color: #000000;
+    padding: 20px 0;
+}
+
+.piepagina {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.piepagina p {
+    margin: 0;
+}
+
+.piepagina ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.piepagina ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.piepagina ul li:last-child {
+    margin-right: 0;
+}
+
+.piepagina ul li a {
+    color: #fff;
+    text-decoration: none;
+}
